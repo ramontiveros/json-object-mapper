@@ -1,10 +1,10 @@
 {
   "name": "json-object-mapper",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "A TypeScript library to serialize and deserialize JSON objects in a fast and non-recursive way",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakilsiraj/json-object-mapper.git"
+    "url": "https://github.com/ramontiveros/json-object-mapper.git"
   },
   "keywords": [
     "JSON",

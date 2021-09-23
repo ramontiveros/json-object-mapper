@@ -27,7 +27,7 @@ export interface Serializer {
 }
 
 export interface Deserializer {
-    deserialize(value: any): any;
+    deserialize(value: any, parent?: any): any;
 }
 
 /**

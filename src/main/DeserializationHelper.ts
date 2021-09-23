@@ -113,7 +113,7 @@ export const DeserializeComplexType = (instance: Object, instanceKey: string, ty
                  */
                 // tslint:disable-next-line:triple-equals
                 if (metadata.deserializer != undefined) {
-                    objectInstance[key] = getOrCreateDeserializer(metadata.deserializer).deserialize(json[jsonKeyName]);
+                    objectInstance[key] = getOrCreateDeserializer(metadata.deserializer).deserialize(json[jsonKeyName], objectInstance);
                 } else if (metadata.type === undefined) {
                     /**
                     * If we do not have any type defined, then we can't do much here but to hope for the best.

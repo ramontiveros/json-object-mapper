@@ -278,7 +278,7 @@ var DeserializeComplexType = function (instance, instanceKey, type, json, jsonKe
                  */
                 // tslint:disable-next-line:triple-equals
                 if (metadata.deserializer != undefined) {
-                    objectInstance[key] = getOrCreateDeserializer(metadata.deserializer).deserialize(json[jsonKeyName]);
+                    objectInstance[key] = getOrCreateDeserializer(metadata.deserializer).deserialize(json[jsonKeyName], objectInstance);
                 }
                 else if (metadata.type === undefined) {
                     /**
